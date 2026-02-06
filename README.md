@@ -1,36 +1,189 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NOUMENA Digital Website
+
+A modern, responsive website for NOUMENA Digital built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- **Modern Stack**: Next.js 16 with App Router, TypeScript, and Tailwind CSS
+- **Responsive Design**: Mobile-first, fully responsive across all devices
+- **SEO Optimized**: Proper metadata and semantic HTML
+- **Accessible**: WCAG-compliant components and navigation
+- **Performance**: Optimized for fast loading and smooth interactions
+
+## Project Structure
+
+```
+web/
+├── app/                    # Next.js App Router pages
+│   ├── page.tsx           # Home page
+│   ├── platform/          # Platform overview
+│   ├── products/          # Products (NPL, Cloud, Pulse)
+│   ├── solutions/         # Solution patterns
+│   ├── developers/        # Developer hub
+│   ├── company/           # About, leadership, partners
+│   ├── resources/         # Case studies, whitepapers
+│   ├── contact/           # Contact form
+│   ├── layout.tsx         # Root layout with Header/Footer
+│   └── globals.css        # Global styles and design tokens
+├── components/            # Reusable React components
+│   ├── Header.tsx         # Navigation header
+│   ├── Footer.tsx         # Site footer
+│   ├── Hero.tsx           # Hero section component
+│   ├── FeatureCard.tsx    # Feature card component
+│   └── LogoStrip.tsx      # Logo showcase component
+└── public/                # Static assets
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+```bash
+cd web
+npm install
+```
+
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build for production:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Design System
 
-## Deploy on Vercel
+The website uses a custom design system with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Primary Color**: `#0066cc` (NOUMENA Blue)
+- **Typography**: Inter font family
+- **Spacing**: Consistent spacing scale using Tailwind
+- **Components**: Reusable button styles, cards, and layouts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Custom CSS Classes
+
+- `.btn-primary` - Primary button style
+- `.btn-secondary` - Secondary button style
+- `.btn-outline` - Outline button style
+
+## Pages
+
+### Home (`/`)
+- Hero section with primary CTAs
+- Trusted by logos
+- Problem statement
+- Value pillars
+- Use cases
+- Testimonials
+
+### Platform (`/platform`)
+- Architecture overview
+- How it works (4-step flow)
+- Security & compliance features
+- Deployment options
+
+### Products (`/products`)
+- NPL & Runtime
+- Noumena Cloud
+- NOUMENA Pulse
+
+### Solutions (`/solutions`)
+- Regulated stablecoins
+- RWA tokenization
+- Enterprise backends
+
+### Developers (`/developers`)
+- Quickstart guide
+- Resource grid
+- Technical decision-maker resources
+
+### Company (`/company`)
+- About NOUMENA
+- Leadership
+- Partners & ecosystem
+
+### Resources (`/resources`)
+- Case studies
+- Whitepapers
+- Additional resources
+
+### Contact (`/contact`)
+- Technical project form
+- Alternative contact methods
+
+## Customization
+
+### Colors
+
+Edit `app/globals.css` to modify the color scheme:
+
+```css
+:root {
+  --noumena-primary: #0066cc;
+  /* ... other colors */
+}
+```
+
+### Content
+
+All page content is in the respective `app/[page]/page.tsx` files. Update text, links, and structure as needed.
+
+### Components
+
+Reusable components are in `components/`. Modify or extend them to match your Figma designs more closely.
+
+## Integration Points
+
+- **Documentation**: Links to `documentation.noumenadigital.com`
+- **Noumena Cloud**: Links to `portal.noumena.cloud`
+- **GitHub**: Links to `github.com/NoumenaDigital`
+- **Contact Form**: Currently logs to console; integrate with your CRM/backend
+
+## Next Steps
+
+1. **Connect Contact Form**: Integrate the contact form with your backend/CRM (e.g., HubSpot API)
+2. **Add Images**: Replace placeholder logos with actual partner/client logos
+3. **Analytics**: Add Google Analytics or similar tracking
+4. **SEO**: Add Open Graph tags and structured data
+5. **Performance**: Optimize images and add lazy loading
+6. **Figma Alignment**: Fine-tune components to match your Figma designs exactly
+
+## Deployment
+
+The site can be deployed to:
+
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **AWS Amplify**
+- Any Node.js hosting platform
+
+For Vercel:
+
+```bash
+npm install -g vercel
+vercel
+```
+
+## License
+
+© 2026 NOUMENA Digital AG. All rights reserved.
