@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Img from "@/components/Img";
 
 export default function Footer() {
   const footerSections = [
@@ -29,12 +29,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1">
             <Link href="/" className="block mb-4">
-              <Image
+              <Img
                 src="/logo/Logo_white.png"
                 alt="NOUMENA Digital"
-                width={180}
-                height={40}
-                className=""
+                className="h-10 w-auto"
               />
             </Link>
             <p className="text-sm text-gray-400 mb-4">

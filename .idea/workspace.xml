@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4adf46cb-4a97-4684-8e24-9eeaefaf8c3f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ai/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ai/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/claude-code/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/claude-code/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/cursor/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/cursor/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/technology/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/technology/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="4adf46cb-4a97-4684-8e24-9eeaefaf8c3f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
