@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
+import Img from "@/components/Img";
 
 export default function Technology() {
   // Architecture layers data
@@ -673,7 +674,7 @@ brew install NoumenaDigital/tools/npl
 npl init --project-dir my-project
 
 # Run locally
-cd my-project && npl dev`}
+cd my-project && docker compose up`}
                 </pre>
               </div>
               <div className="space-y-2">
@@ -747,7 +748,7 @@ cd my-project && npl dev`}
                   key={index}
                   className="flex items-center justify-center h-12 w-full opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
                 >
-                  <img
+                  <Img
                     src={logo.src}
                     alt={logo.alt}
                     className="max-h-10 max-w-[100px] object-contain"
@@ -764,7 +765,7 @@ cd my-project && npl dev`}
                   key={index}
                   className="flex items-center justify-center h-12 w-full opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
                 >
-                  <img
+                  <Img
                     src={logo.src}
                     alt={logo.alt}
                     className="max-h-10 max-w-[100px] object-contain"
@@ -781,7 +782,7 @@ cd my-project && npl dev`}
                   key={index}
                   className="flex items-center justify-center h-12 w-full opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
                 >
-                  <img
+                  <Img
                     src={logo.src}
                     alt={logo.alt}
                     className="max-h-10 max-w-[100px] object-contain"

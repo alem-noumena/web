@@ -127,7 +127,7 @@ export default function ReplitPage() {
                   </span>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Run First-Time Setup</h3>
-                    <p className="text-gray-600 mb-4">Let the Replit Agent configure and initialize your project. You will need to present the tenant and app slogs that you noted.</p>
+                    <p className="text-gray-600 mb-4">Let the Replit Agent configure and initialize your project. You will need to present the tenant and app slugs that you noted.</p>
                     <div className="bg-gray-900 rounded-lg p-4">
                       <p className="text-gray-400 text-sm mb-2">Tell the Replit Agent:</p>
                       <code className="text-green-400 font-mono text-sm">

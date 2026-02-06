@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
 import LogoStrip from "@/components/LogoStrip";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Company() {
   const leadership = [
@@ -121,7 +122,7 @@ export default function Company() {
                 className="bg-white p-4 rounded-lg border border-gray-200 flex gap-4 items-start"
               >
                 <img
-                  src={leader.image}
+                  src={withBasePath(leader.image)}
                   alt={leader.name}
                   className="w-16 h-16  shrink-0 rounded-full object-cover"
                 />

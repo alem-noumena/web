@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Resources() {
   const quickstartSteps = [
@@ -158,7 +159,7 @@ export default function Resources() {
                 className="group bg-white rounded-xl border border-gray-200 p-6 hover:border-noumena-accent-1 hover:shadow-lg transition-all duration-200"
               >
                 <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <img src="/img/cursor.png" alt="Cursor" className="w-12 h-12 object-contain" />
+                  <img src={withBasePath("/img/cursor.png")} alt="Cursor" className="w-12 h-12 object-contain" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Cursor</h3>
                 <p className="text-gray-600 text-sm mb-4">
@@ -175,7 +176,7 @@ export default function Resources() {
                 className="group bg-white rounded-xl border border-gray-200 p-6 hover:border-noumena-accent-1 hover:shadow-lg transition-all duration-200"
               >
                 <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <img src="/img/Claude_AI_symbol.svg.png" alt="Claude" className="w-12 h-12 object-contain" />
+                  <img src={withBasePath("/img/Claude_AI_symbol.svg.png")} alt="Claude" className="w-12 h-12 object-contain" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Claude Code</h3>
                 <p className="text-gray-600 text-sm mb-4">
@@ -249,7 +250,7 @@ export default function Resources() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{paper.title}</h3>
                 <p className="text-gray-600 mb-4">{paper.description}</p>
                 <a
-                  href={encodeURI(paper.file)}
+                  href={withBasePath(encodeURI(paper.file))}
                   download={paper.filename}
                   className="inline-flex items-center text-noumena-accent-1 font-semibold hover:underline"
                 >

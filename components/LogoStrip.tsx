@@ -1,3 +1,5 @@
+import { withBasePath } from "@/lib/basePath";
+
 interface LogoStripProps {
   title?: string;
   logos: Array<{ name: string; src?: string; alt: string }>;
@@ -18,7 +20,7 @@ export default function LogoStrip({ title, logos }: LogoStripProps) {
             >
               {logo.src ? (
                 <img
-                  src={logo.src}
+                  src={withBasePath(logo.src)}
                   alt={logo.alt}
                   className="max-h-14 max-w-[120px] object-contain"
                 />

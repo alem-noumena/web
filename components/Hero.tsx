@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { withBasePath } from "@/lib/basePath";
 
 interface HeroProps {
   headline: string;
@@ -13,7 +14,7 @@ export default function Hero({ headline, subheadline, primaryCTA, secondaryCTA, 
     <section
       className="relative py-20 lg:py-32 bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `url(${withBasePath(backgroundImage)})`,
       }}
     >
       {/* Overlay for better text readability */}

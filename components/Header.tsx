@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center h-12 py-2">
             <img
-              src="/logo/Logo_gradient.png"
+              src={withBasePath("/logo/Logo_gradient.png")}
               alt="NOUMENA Digital"
               className="h-8 md:h-10 w-auto object-contain"
               style={{ maxHeight: '10px' }}

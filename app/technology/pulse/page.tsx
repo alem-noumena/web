@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import LogoStrip from "@/components/LogoStrip";
 import Link from "next/link";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Pulse() {
   // Market context stats
@@ -260,7 +261,7 @@ export default function Pulse() {
             <div className="mb-12">
               <div className="flex justify-center">
                 <img
-                  src="/assets/NOUMENAPulse.png"
+                  src={withBasePath("/assets/NOUMENAPulse.png")}
                   alt="NOUMENA Pulse Integration Architecture"
                   className="max-w-full h-auto rounded-lg"
                 />
