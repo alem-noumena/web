@@ -32,7 +32,7 @@ export default function Footer() {
               <Img
                 src="/logo/Logo_white.png"
                 alt="NOUMENA Digital"
-                className="h-10 w-auto"
+                className="max-h-[15px] w-auto"
               />
             </Link>
             <p className="text-sm text-gray-400 mb-4">
