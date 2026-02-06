@@ -346,24 +346,71 @@ export default function AISolutions() {
             </div>
 
             {/* Architecture Diagram */}
-            <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
-              <pre className="text-sm text-gray-100 font-mono text-center">
-{`┌─────────────────────────────────────────────────────────────┐
-│                      AI Agent Layer                         │
-│      LangChain  │  AutoGen  │    APK   │  Custom            │
-└───────────────────────────┬─────────────────────────────────┘
-       │ MCP Protocol
-┌───────────────────────────▼─────────────────────────────────┐
-│                       NPL Runtime                           │
-│   State Management  │  Rule Enforcement  │  Audit Logging   │
-└───────────────────────────┬─────────────────────────────────┘
-                  │ Secure APIs (REST, MCP)
-┌───────────────────────────▼─────────────────────────────────┐
-│                    Enterprise Systems                       │
-│       SAP  │  Salesforce  │  ServiceNow  │  Databases       │
-└─────────────────────────────────────────────────────────────┘`}
-              </pre>
+            <div className="text-center mb-8 mt-12">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                The Integration Architecture
+              </h3>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                NPL sits between your AI agents and enterprise systems, providing governed state and enforcing business rules via the MCP standard.
+              </p>
             </div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                      <div className="max-w-3xl mx-auto flex flex-col gap-5">
+                        {/* AI Agent Layer */}
+                        <div className="border-2 border-[#20127C] rounded-lg p-5 bg-white shadow-sm">
+                          <h3 className="text-lg font-bold uppercase tracking-wide text-[#20127C] mb-4 text-center">
+                            AI Agent Layer
+                          </h3>
+                          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">LangChain</div>
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">AutoGen</div>
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">ADK</div>
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">Custom</div>
+                          </div>
+                        </div>
+
+                        {/* Connector */}
+                        <div className="relative h-8 flex items-center justify-center">
+                          <div className="absolute w-0.5 h-full bg-gray-300"></div>
+                          <span className="relative z-10 bg-white px-3 py-1 text-xs text-gray-500 border border-gray-200 rounded-full">
+                            MCP Protocol
+                          </span>
+                        </div>
+
+                        {/* NPL Runtime Layer */}
+                        <div className="border-2 border-noumena-accent-3 rounded-lg p-5 bg-white shadow-sm">
+                          <h3 className="text-lg font-bold uppercase tracking-wide text-noumena-accent-3 mb-4 text-center">
+                            NPL Runtime
+                          </h3>
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">State Management</div>
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">Rule Enforcement</div>
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">Audit Logging</div>
+                          </div>
+                        </div>
+
+                        {/* Connector */}
+                        <div className="relative h-8 flex items-center justify-center">
+                          <div className="absolute w-0.5 h-full bg-gray-300"></div>
+                          <span className="relative z-10 bg-white px-3 py-1 text-xs text-gray-500 border border-gray-200 rounded-full">
+                            Secure APIs (REST, MCP)
+                          </span>
+                        </div>
+
+                        {/* Enterprise Systems Layer */}
+                        <div className="border-2 border-noumena-accent-1 rounded-lg p-5 bg-white shadow-sm">
+                          <h3 className="text-lg font-bold uppercase tracking-wide text-noumena-accent-1 mb-4 text-center">
+                            Enterprise Systems
+                          </h3>
+                          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">SAP</div>
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">Salesforce</div>
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">ServiceNow</div>
+                            <div className="bg-noumena-bg-3 p-3 rounded text-sm font-medium text-center border border-gray-200">Databases</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
           </div>
         </div>
       </section>

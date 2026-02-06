@@ -1,6 +1,6 @@
-// Base path for GitHub Pages deployment
-// Change this to '' for root domain deployment or '/repo-name' for subpath
-export const basePath = process.env.NODE_ENV === 'production' ? '/web' : '';
+// Base path from environment variable, defaults to empty for local dev
+// Set NEXT_PUBLIC_BASE_PATH=/web in GitHub Actions for production build
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 // Helper to prefix paths with basePath
 export function withBasePath(path: string): string {

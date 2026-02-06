@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4adf46cb-4a97-4684-8e24-9eeaefaf8c3f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/company/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/company/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/replit/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/replit/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ai/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ai/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/technology/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/technology/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/technology/pulse/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/technology/pulse/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LogoStrip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LogoStrip.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/basePath.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/basePath.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +68,7 @@
       <recent name="C:\Users\AlemFilli\IdeaProjects\NOUMENAWeb\web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AlemFilli\IdeaProjects\NOUMENAWeb\web\public\team" />
       <recent name="C:\Users\AlemFilli\IdeaProjects\NOUMENAWeb\web\public\img" />
       <recent name="C:\Users\AlemFilli\IdeaProjects\NOUMENAWeb\web\public\logo" />
       <recent name="C:\Users\AlemFilli\IdeaProjects\NOUMENAWeb\web\public\assets" />

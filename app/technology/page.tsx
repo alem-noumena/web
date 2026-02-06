@@ -275,6 +275,7 @@ export default function Technology() {
         </div>
       </section>
 
+
       {/* Why This Architecture - Differentiators */}
       <section className="py-20 bg-noumena-bg-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
