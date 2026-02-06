@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
+import CopyCodeBlock from "@/components/CopyCodeBlock";
 
 export default function ClaudeCodePage() {
   return (
@@ -76,11 +77,7 @@ export default function ClaudeCodePage() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Install Claude Code</h3>
                     <p className="text-gray-600 mb-3">Install Claude Code CLI globally.</p>
-                    <div className="bg-gray-900 rounded-lg p-4">
-                      <pre className="text-sm text-green-400 font-mono">
-npm install -g @anthropic-ai/claude-code
-                      </pre>
-                    </div>
+                    <CopyCodeBlock code="npm install -g @anthropic-ai/claude-code" />
                   </div>
                 </div>
               </div>
@@ -93,13 +90,9 @@ npm install -g @anthropic-ai/claude-code
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Set up your NPL project</h3>
                     <p className="text-gray-600 mb-3">Install the NPL CLI and create a new project.</p>
-                    <div className="bg-gray-900 rounded-lg p-4">
-                      <pre className="text-sm text-green-400 font-mono">
-{`brew install NoumenaDigital/tools/npl
+                    <CopyCodeBlock code={`brew install NoumenaDigital/tools/npl
 npl init --project-dir my-project
-cd my-project`}
-                      </pre>
-                    </div>
+cd my-project`} />
                   </div>
                 </div>
               </div>
@@ -112,11 +105,7 @@ cd my-project`}
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Start Claude Code</h3>
                     <p className="text-gray-600 mb-3">Launch Claude Code in your project directory.</p>
-                    <div className="bg-gray-900 rounded-lg p-4">
-                      <pre className="text-sm text-green-400 font-mono">
-claude
-                      </pre>
-                    </div>
+                    <CopyCodeBlock code="claude" />
                   </div>
                 </div>
               </div>
@@ -152,9 +141,9 @@ claude
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
               Example Workflow
             </h2>
-            <div className="bg-gray-900 rounded-xl p-6 overflow-x-auto">
-              <pre className="text-sm text-green-400 font-mono leading-relaxed">
-{`$ claude
+            <CopyCodeBlock
+              className="p-6"
+              code={`$ claude
 
 > Create an NPL protocol for a subscription service with monthly billing.
   The service provider can create subscriptions, and subscribers can
@@ -174,9 +163,7 @@ Running: npl build
 > Deploy to NOUMENA Cloud
 
 Running: npl deploy --tenant my-tenant --app my-app
-✓ Deployed successfully`}
-              </pre>
-            </div>
+✓ Deployed successfully`} />
           </div>
         </div>
       </section>

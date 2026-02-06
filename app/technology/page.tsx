@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
 import Img from "@/components/Img";
+import CopyCodeBlock from "@/components/CopyCodeBlock";
 
 export default function Technology() {
   // Architecture layers data
@@ -62,39 +63,39 @@ export default function Technology() {
   // NPL features
   const nplFeatures = [
     {
-      title: "Parties and Permissions",
+      title: "Parties and permissions",
       description: "Authorization is grammar, not library code. Define who can do what directly in your protocol definitions.",
     },
     {
-      title: "Finite State Machines",
+      title: "Finite state machines",
       description: "Model workflows as explicit states and transitions. No hidden states, no impossible transitions.",
     },
     {
-      title: "Transactional Execution",
+      title: "Transactional execution",
       description: "Atomic state changes. Either everything succeeds or nothing changes.",
     },
     {
-      title: "Automatic Persistence",
+      title: "Automatic persistence",
       description: "Protocol instances stored with full version history. No ORM, no migrations required.",
     },
     {
-      title: "@api to REST Endpoints",
+      title: "@api to REST endpoints",
       description: "Annotate protocols and get production-ready APIs with OpenAPI specs and TypeScript clients.",
     },
     {
-      title: "Complete Audit Trail",
+      title: "Complete audit trail",
       description: "Every permission check, every state change, logged automatically.",
     },
   ];
 
   // Cloud features
   const cloudFeatures = [
-    { title: "Secure Authentication", description: "Keycloak-based identity management, SSO, MFA out of the box" },
-    { title: "One-Click Deployment", description: "Push to deploy from your repository" },
-    { title: "Enterprise Security", description: "Encryption at rest/transit, network isolation, regular pen testing" },
-    { title: "Monitoring & Ops", description: "Prometheus metrics, structured logging, health endpoints" },
-    { title: "Automatic Backups", description: "Daily backups included, on-demand for Pro tier" },
-    { title: "GDPR Tooling", description: "Built-in anonymization and data removal capabilities" },
+    { title: "Secure authentication", description: "Keycloak-based identity management, SSO, MFA out of the box" },
+    { title: "One-click deployment", description: "Push to deploy from your repository" },
+    { title: "Enterprise security", description: "Encryption at rest/transit, network isolation, regular pen testing" },
+    { title: "Monitoring & ops", description: "Prometheus metrics, structured logging, health endpoints" },
+    { title: "Automatic backups", description: "Daily backups included, on-demand for Pro tier" },
+    { title: "GDPR tooling", description: "Built-in anonymization and data removal capabilities" },
   ];
 
   // Adapter cards
@@ -174,7 +175,7 @@ export default function Technology() {
       subtitle: "Full Control",
       dataLocation: "Your infrastructure",
       operations: "Your team",
-      timeToLaunch: "Weeks",
+      timeToLaunch: "Your timeline",
       bestFor: "Regulated institutions, max control",
     },
   ];
@@ -244,7 +245,7 @@ export default function Technology() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                The NOUMENA Stack
+                The NOUMENA stack
               </h2>
               <p className="text-xl text-gray-600">
                 Four layers, one coherent model. Each layer builds on the guarantees of the layer below. Choose the products you need and use them together or independently.
@@ -346,11 +347,27 @@ export default function Technology() {
 
             {/* Code Example */}
             <div className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Code Example</h3>
-              <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
-                <pre
-                  className="text-sm text-gray-100 font-mono leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: `<span class="text-yellow-400">@api</span>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Code example</h3>
+              <CopyCodeBlock
+                className="p-6"
+                code={`@api
+protocol[issuer, holder] SimpleToken(var balance: Number) {
+
+    permission[issuer] mint(amount: Number) {
+        balance = balance + amount
+    }
+
+    permission[holder] transfer(to: Party, amount: Number)
+        requires balance >= amount {
+        balance = balance - amount
+    }
+
+    permission[issuer] burn(amount: Number)
+        requires balance >= amount {
+        balance = balance - amount
+    }
+}`}
+                highlightedHtml={`<span class="text-yellow-400">@api</span>
 <span class="text-purple-400">protocol</span>[<span class="text-gray-300">issuer</span>, <span class="text-gray-300">holder</span>] <span class="text-green-400">SimpleToken</span>(<span class="text-purple-400">var</span> balance: <span class="text-cyan-400">Number</span>) {
 
     <span class="text-purple-400">permission</span>[<span class="text-gray-300">issuer</span>] <span class="text-blue-400">mint</span>(amount: <span class="text-cyan-400">Number</span>) {
@@ -366,9 +383,8 @@ export default function Technology() {
         <span class="text-purple-400">requires</span> balance &gt;= amount {
         balance = balance - amount
     }
-}` }}
-                />
-              </div>
+}`}
+              />
               <p className="text-sm text-gray-600 mt-3">
                 <strong>What you get:</strong> Compile-time verification that only <code className="bg-gray-100 px-1 rounded">issuer</code> can mint/burn. Runtime enforcement of balance checks. Automatic audit trail. Generated REST API with proper authorization.
               </p>
@@ -437,11 +453,21 @@ export default function Technology() {
 
             {/* Quick Start */}
             <div className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Start</h3>
-              <div className="bg-gray-900 rounded-lg p-6">
-                <pre
-                  className="text-sm text-gray-100 font-mono leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: `<span class="text-gray-500"># Install NPL CLI</span>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick start</h3>
+              <CopyCodeBlock
+                className="p-6"
+                code={`# Install NPL CLI
+brew install NoumenaDigital/tools/npl
+
+# Initialize project
+npl init --project-dir my-project
+
+# Local development
+# Edit with your favourite IDE
+
+# Deploy locally
+npl deploy`}
+                highlightedHtml={`<span class="text-gray-500"># Install NPL CLI</span>
 <span class="text-green-400">brew</span> install NoumenaDigital/tools/npl
 
 <span class="text-gray-500"># Initialize project</span>
@@ -451,9 +477,8 @@ export default function Technology() {
 <span class="text-gray-500"># Edit with your favourite IDE</span>
 
 <span class="text-gray-500"># Deploy locally</span>
-<span class="text-green-400">npl</span> deploy` }}
-                />
-              </div>
+<span class="text-green-400">npl</span> deploy`}
+              />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -528,7 +553,7 @@ export default function Technology() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                How the Products Work Together
+                How the products work together
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Choose the combination that fits your use case.
@@ -563,7 +588,7 @@ export default function Technology() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Security & Compliance Architecture
+                Security and compliance architecture
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Defense in depth. Security guarantees at every layer.
@@ -573,7 +598,7 @@ export default function Technology() {
             <div className="grid md:grid-cols-2 gap-8">
             {/* Security Layers */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Defense in Depth</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Defence in depth</h3>
               <div className="space-y-3">
                 {securityLayers.map((item, index) => (
                   <div key={index} className="bg-noumena-bg-3 rounded-lg p-4">
@@ -586,7 +611,7 @@ export default function Technology() {
 
             {/* Compliance */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Compliance Capabilities</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Compliance capabilities</h3>
               <div className="space-y-3">
                 {complianceCapabilities.map((item, index) => (
                   <div key={index} className="flex items-start bg-noumena-bg-3 rounded-lg p-4">
@@ -601,13 +626,13 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* Deployment Options */}
+      {/* Deployment options */}
       <section className="py-20 bg-noumena-bg-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Deployment Options
+                Deployment options
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Choose the deployment model that fits your requirements.
@@ -651,24 +676,24 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* Getting Started */}
+      {/* Getting started */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Getting Started
+                Getting started
               </h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
             {/* For Developers */}
             <div className="bg-noumena-bg-3 rounded-lg p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">For Developers</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">For developers</h3>
               <p className="text-gray-600 mb-6">Get up and running in minutes.</p>
-              <div className="bg-gray-900 rounded-lg p-4 mb-6">
-                <pre className="text-xs text-gray-100 font-mono overflow-x-auto">
-{`# Install
+              <CopyCodeBlock
+                className="mb-6"
+                code={`# Install
 brew install NoumenaDigital/tools/npl
 
 # Initialize
@@ -676,8 +701,7 @@ npl init --project-dir my-project
 
 # Run locally
 cd my-project && docker compose up`}
-                </pre>
-              </div>
+              />
               <div className="space-y-2">
                 <Link
                   href="https://documentation.noumenadigital.com"
@@ -706,7 +730,7 @@ cd my-project && docker compose up`}
 
             {/* For Architects */}
             <div className="bg-noumena-bg-3 rounded-lg p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">For Architects & Technical Leaders</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">For architects and technical leaders</h3>
               <p className="text-gray-600 mb-6">Evaluate the platform for your use case.</p>
               <ul className="space-y-4 mb-6">
                 <li className="flex items-start">

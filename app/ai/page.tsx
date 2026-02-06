@@ -11,7 +11,7 @@ export default function AISolutions() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: "State Inference Failures",
+      title: "State inference failures",
       description: "Agents guess workflow state from conversation history rather than querying authoritative sources. The result: invalid actions, duplicate work, and \"amnesia\" between turns.",
     },
     {
@@ -20,7 +20,7 @@ export default function AISolutions() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
         </svg>
       ),
-      title: "Coordination Breakdown",
+      title: "Coordination breakdown",
       description: "Multiple agents operate in silos without shared context. The result: infinite loops, agent ping-pong, and 50+ tool calls per turn with no meaningful progress.",
     },
     {
@@ -29,7 +29,7 @@ export default function AISolutions() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      title: "Compliance and Audit Gaps",
+      title: "Compliance and audit gaps",
       description: "No deterministic record of who did what, when, or why. The result: SOX violations, failed audits, and zero accountability.",
     },
   ];
@@ -37,7 +37,7 @@ export default function AISolutions() {
   // Three pillars
   const pillars = [
     {
-      title: "Runtime Enforcement",
+      title: "Runtime enforcement",
       points: [
         "Protocols define valid state transitions and permissions",
         "Business rules execute at runtime, not only at design time",
@@ -46,7 +46,7 @@ export default function AISolutions() {
       example: "No PO without an approved PR. Approval required over $5,000.",
     },
     {
-      title: "Multi-Party State",
+      title: "Multi-party state",
       points: [
         "Single source of truth for all participating agents",
         "Agents query NPL for current state and never infer it",
@@ -55,7 +55,7 @@ export default function AISolutions() {
       example: "Shared context enables genuine multi-agent collaboration",
     },
     {
-      title: "Complete Audit Trail",
+      title: "Complete audit trail",
       points: [
         "Every action logged with party identity and timestamp",
         "Cryptographic verification for regulatory compliance",
@@ -108,19 +108,19 @@ export default function AISolutions() {
       enforcement: "Budget limits, approval chains, vendor validation",
     },
     {
-      title: "Tailored Insurance",
+      title: "Tailored insurance",
       description: "Automate bespoke insurance coverage, e.g. for freight. Agents on both sides follow a strict negotiation process and formalize the outcome in a binding contract.",
       workflow: "Assess Risk, Negotiate Terms, Validate Coverage, Formalize Contract, Issue Policy",
       enforcement: "Underwriting rules, coverage limits, contract formalization, regulatory compliance",
     },
     {
-      title: "Trade Finance",
+      title: "Trade finance",
       description: "Agents representing importer, exporter, and issuing bank coordinate document exchange, goods verification, and payment release through strict sequential steps formalized in a letter of credit.",
       workflow: "Apply for LC, Issue LC, Ship Goods, Present Documents, Verify Compliance, Release Payment",
       enforcement: "LC terms, document requirements, UCP 600 rules, payment conditions",
     },
     {
-      title: "Regulated Onboarding",
+      title: "Regulated onboarding",
       description: "An onboarding agent guides clients through documentation submission, reviews and prepares materials per policy, requests additional information when needed, and recommends approval or decline for human review.",
       workflow: "Collect Documents, Verify Completeness, Review Per Policy, Request Clarifications, Recommend Decision, Human Review",
       enforcement: "KYC/AML rules, documentation requirements, escalation to human reviewer",
@@ -200,7 +200,7 @@ export default function AISolutions() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Why Enterprise AI Agents Fail
+                Why enterprise AI agents fail
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 AI agents excel at reasoning and decision-making but struggle with enterprise coordination. Without runtime governance, multi-agent systems break down in predictable ways.
@@ -234,7 +234,7 @@ export default function AISolutions() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                NPL: The Runtime Layer for AI Agents
+                NPL: the runtime layer for AI agents
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 NPL sits between your agents and your systems, providing deterministic workflow state, enforcing business rules at runtime, and logging every action with cryptographic identity.
@@ -268,13 +268,13 @@ export default function AISolutions() {
         </div>
       </section>
 
-      {/* Architecture - Separation of Concerns */}
+      {/* Architecture - Separation of concerns */}
       <section className="py-20 bg-noumena-bg-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Separation of Concerns
+                Separation of concerns
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 NPL enforces a clean boundary between agent reasoning and workflow governance.
@@ -311,7 +311,7 @@ export default function AISolutions() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Framework Agnostic. Enterprise Ready.
+                Framework agnostic. Enterprise ready.
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 NPL integrates with your existing AI stack via the Model Context Protocol (MCP) standard.
@@ -421,7 +421,7 @@ export default function AISolutions() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Where Multi-Agent Orchestration Delivers
+                Where multi-agent orchestration delivers
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 See how NPL enables reliable multi-agent coordination in enterprise workflows.
@@ -456,7 +456,7 @@ export default function AISolutions() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                What Makes NPL Different
+                What makes NPL different
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 NPL fills the gap between process oriented design tools, automation and AI reasoning.
@@ -532,7 +532,7 @@ export default function AISolutions() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Technical Specification
+                Technical specification
               </h2>
             </div>
 
@@ -575,7 +575,7 @@ export default function AISolutions() {
       <section className="py-20 bg-noumena-accent-1 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            See Multi-Agent Orchestration in Action
+            See multi-agent orchestration in action
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Start with a proof-of-concept using mock integrations. Then connect to your production systems when you are ready.

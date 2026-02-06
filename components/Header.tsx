@@ -24,8 +24,8 @@ export default function Header() {
             <img
               src={withBasePath("/logo/Logo_gradient.png")}
               alt="NOUMENA Digital"
-              className="h-8 md:h-10 w-auto object-contain"
-              style={{ maxHeight: '10px' }}
+              className="h-10 md:h-12 w-auto object-contain"
+              style={{ maxHeight: '14px' }}
               onError={(e) => {
                 console.error('Logo failed to load:', e);
                 (e.target as HTMLImageElement).style.display = 'none';

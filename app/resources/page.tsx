@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
 import { withBasePath } from "@/lib/basePath";
+import CopyCommand from "@/components/CopyCommand";
 
 export default function Resources() {
   const quickstartSteps = [
@@ -91,11 +92,7 @@ export default function Resources() {
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
                     <p className="text-gray-600 mb-4">{step.description}</p>
-                    <div className="bg-gray-900 rounded-lg p-4">
-                      <code className="text-green-400 font-mono text-sm md:text-base">
-                        {step.command}
-                      </code>
-                    </div>
+                    <CopyCommand command={step.command} className="" />
                   </div>
                 </div>
               </div>
@@ -290,17 +287,13 @@ export default function Resources() {
                   </span>
                   <h3 className="text-2xl font-bold mb-2">NPL vs. Traditional Frameworks</h3>
                   <p className="text-gray-300">
-                    Analysis comparing NPL against Node.js, Rails, and Django. See how NPL delivers 7.7x code reduction with zero security vulnerabilities.
+                    Analysis comparing NPL against Java, .Net, Node.js, Rails, and Django. See how NPL delivers 3-5x code  while eradicating security concerns.
                   </p>
                 </div>
                 <div className="flex items-center gap-8 flex-shrink-0">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-white">7.7x</div>
+                    <div className="text-3xl font-bold text-white">3-5x</div>
                     <div className="text-xs text-gray-400">Less code</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-white">3.5x</div>
-                    <div className="text-xs text-gray-400">Lower complexity</div>
                   </div>
                   <svg className="w-6 h-6 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

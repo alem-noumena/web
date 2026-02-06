@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
+import CopyCodeBlock from "@/components/CopyCodeBlock";
 
 export default function CursorPage() {
   return (
@@ -89,13 +90,9 @@ export default function CursorPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Set up your NPL project</h3>
                     <p className="text-gray-600 mb-3">Install the NPL CLI and create a new project.</p>
-                    <div className="bg-gray-900 rounded-lg p-4">
-                      <pre className="text-sm text-green-400 font-mono">
-{`brew install NoumenaDigital/tools/npl
+                    <CopyCodeBlock code={`brew install NoumenaDigital/tools/npl
 npl init --project-dir my-project
-cd my-project`}
-                      </pre>
-                    </div>
+cd my-project`} />
                   </div>
                 </div>
               </div>
