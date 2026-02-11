@@ -749,7 +749,7 @@ cd my-project && docker compose up`}
                   <svg className="w-5 h-5 text-noumena-accent-3 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700 text-sm"><strong>Architecture Review:</strong> Discover how NOUMENA fits your stack</span>
+                  <span className="text-gray-700 text-sm"><strong>Architecture Review:</strong> Discover how NOUMENA Technology fits your stack</span>
                 </li>
               </ul>
               <Link href="/contact" className="btn-primary inline-block text-center w-full">

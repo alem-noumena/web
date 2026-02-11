@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "NPL Benchmarking Study | NOUMENA",
-  description: "Independent benchmark comparing NPL against Ruby on Rails, Node.js, and Django. See how NPL delivers 7.7x code reduction and zero security vulnerabilities.",
+  description: "Benchmark comparing NPL against  Java, .Net,  Node.js, Rails, and Django. See how NPL delivers 7.7x code reduction and zero security vulnerabilities.",
 };
 
 export default function BenchmarkStudy() {

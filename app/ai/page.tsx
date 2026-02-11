@@ -169,19 +169,16 @@ export default function AISolutions() {
   // Technical capabilities
   const nplCapabilities = [
     "Protocol-defined state machines",
-    "Compiler-enforced permissions",
+    "Compiler-enforced authorization",
     "Transactional execution guarantees",
     "Automatic REST API generation",
-    "MCP standard integration",
-    "Multi-party identity management",
+    "Standard MCP exposure of services",
   ];
 
   const deploymentOptions = [
     "NOUMENA Cloud (managed)",
     "Hybrid (your data, our ops)",
     "On-premise (full control)",
-    "Kubernetes 1.24+ or Docker",
-    "PostgreSQL 14+",
   ];
 
   return (
